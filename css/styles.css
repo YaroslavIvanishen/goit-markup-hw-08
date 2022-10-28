@@ -1,22 +1,130 @@
 .logo {font-family: 'Raleway', sans-serif;}
 body {font-family: 'Roboto', sans-serif;}
-.bcg-color {background-color: grey;}
+.bcg-color {width: flex;
+    height: 600px;
+    left: 0px;
+    top: 80px;
+background: #2F303A;}
 
-.logo {}
+/*---------HEDER--------*/
+.background {height: 600px;
+    left: 0px;
+    top: 80px;
+filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));}
 
-.nav-list-studio {}
+.header {display: flex;
+flex-direction:row;
+position: absolute;
+    width: 1800px;;
+    height: 80px;
+    left: 0px;
+    top: 0px;
 
-.nav-list-portfolio {}
+    background: #FFFFFF;}
 
-.nav-list-contacts {}
+.logo {position: absolute;
+    width: 145px;
+    height: 31px;
+    left: 215px;
+    top: 24px;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;color: #000000;
+text-decoration: none;}
 
-.kont-list-mail {}
+.logo-web {color: #2196F3;}
+.nav-list {list-style: none;} 
+.nav-list a {text-decoration: none;}
 
-.kont-list-tel {}
+.nav-list-studio {position: absolute;
+    width: 45px;
+    height: 16px;
+    left: 453px;
+    top: 32px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    color: #212121;}
+.nav-list-studio:hover, .nav-list-studio:focus {color: #2196F3;};
 
-.h1 {}
 
-.button {}
+.nav-list-portfolio {position: absolute;
+    width: 72px;
+    height: 16px;
+    left: 548px; 
+    top: 32px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    color: #212121;}
+.nav-list-portfolio:hover, .nav-list-portfolio:focus {color: #2196F3;
+}
+
+.nav-list-contacts {position: absolute;
+    width: 64px;
+    height: 16px;
+    left: 670px;
+    top: 32px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    color: #212121;}
+.nav-list-contacts:hover, .nav-list-contacts:focus {color: #2196F3;
+}
+
+.kont-list-mail {position: absolute;
+    width: 135px;
+    height: 16px;
+    left: 1078px;
+    top: 32px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    color: #757575;}
+.kont-list-mail:hover, .kont-list-mail:focus {color: #2196F3;
+}
+.kont-list-mail {text-decoration: none;}
+
+.kont-list-tel {position: absolute;
+    width: 122px;
+    height: 16px;
+    left: 1263px;
+    top: 32px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.02em;
+    color: #757575;}
+.kont-list-tel:hover, .kont-list-tel:focus {color: #2196F3;
+}
+.kont-list-tel {text-decoration: none;}
+
+.hero {position: absolute;
+    width: 696px;
+    height: 120px;
+    left: 470px;
+    top: 280px;
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: #FFFFFF;}
+
+.button {font: inherit;
+    background-color: #2196F3; 
+    color: #FFFFFF;
+position: absolute;
+    width: 216px;
+    height: 50px;
+    left: 692px;
+    top: 360px;}
 
 .h3-uv-do-det {}
 
