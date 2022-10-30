@@ -43,6 +43,7 @@ text-decoration: none;}
 .nav-list {list-style: none;} 
 .nav-list a {text-decoration: none;}
 
+.nav-list-studio.current {color: #2196F3;}
 .nav-list-studio {
     font-weight: 500;
     font-size: 14px;
@@ -50,17 +51,16 @@ text-decoration: none;}
     letter-spacing: 0.02em;
     color: var(--title-text-color)}
 .nav-list-studio:hover, .nav-list-studio:focus {color: #2196F3;};
-.nav-list .nav-list-studio.current-a {color: #2196F3;}
 
+.nav-list-portfolio.current {color: #2196F3;}
 .nav-list-portfolio {
     font-weight: 500;
     font-size: 14px;
     line-height: 1.1428;
     letter-spacing: 0.02em;
     color: var(--title-text-color)}
-.nav-list-portfolio:hover, .nav-list-portfolio:focus {color: #2196F3;
-}
-.nav-list .nav-list-portfolio.current-b {color: #2196F3;}
+.nav-list-portfolio:hover, .nav-list-portfolio:focus {color: #2196F3;}
+.nav-list-portfolio.current {color: #2196F3;}
 
 .nav-list-contacts {
     font-weight: 500;
@@ -68,8 +68,8 @@ text-decoration: none;}
     line-height: 1.1428;
     letter-spacing: 0.02em;
     color: var(--title-text-color)}
-.nav-list-contacts:hover, .nav-list-contacts:focus {color: #2196F3;
-}
+.nav-list-contacts:hover, .nav-list-contacts:focus {color: #2196F3;}
+.nav-list-contacts.current {color: #2196F3;}
 
 .kont-list-mail {
     font-weight: 500;
