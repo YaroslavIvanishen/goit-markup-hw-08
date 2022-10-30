@@ -1,6 +1,12 @@
+:root {--primary-text-color: #757575;
+--title-text-color: #212121;
+--accent-color: #2196F3;}
+
+
+
 .logo {font-family: 'Raleway', sans-serif;}
 body {font-family: 'Roboto', sans-serif;
-color: #757575;}
+color: var(--primary-text-color)}
 
 section ul > li {list-style: none;}
 
@@ -33,7 +39,7 @@ position: absolute;
     letter-spacing: 0.03em;color: #000000;
 text-decoration: none;}
 
-.logo-web {color: #2196F3;}
+.logo-web {color: var(--accent-color)}
 .nav-list {list-style: none;} 
 .nav-list a {text-decoration: none;}
 
@@ -42,25 +48,26 @@ text-decoration: none;}
     font-size: 14px;
     line-height: 1.1428;
     letter-spacing: 0.02em;
-    color: #212121;}
+    color: var(--title-text-color)}
 .nav-list-studio:hover, .nav-list-studio:focus {color: #2196F3;};
-
+.nav-list .nav-list-studio.current-a {color: #2196F3;}
 
 .nav-list-portfolio {
     font-weight: 500;
     font-size: 14px;
     line-height: 1.1428;
     letter-spacing: 0.02em;
-    color: #212121;}
+    color: var(--title-text-color)}
 .nav-list-portfolio:hover, .nav-list-portfolio:focus {color: #2196F3;
 }
+.nav-list .nav-list-portfolio.current-b {color: #2196F3;}
 
 .nav-list-contacts {
     font-weight: 500;
     font-size: 14px;
     line-height: 1.1428;
     letter-spacing: 0.02em;
-    color: #212121;}
+    color: var(--title-text-color)}
 .nav-list-contacts:hover, .nav-list-contacts:focus {color: #2196F3;
 }
 
