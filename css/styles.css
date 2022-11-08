@@ -18,13 +18,6 @@ margin: 0;}
 margin-left: auto;
 margin-right: auto;}
 
-.bcg-color {width: 1600px;
-    height: 600px;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 94px;
-background: #2F303A;
-}
 
 /*---------HEDER--------*/
 .background {height: 600px;
@@ -35,13 +28,12 @@ filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));}
 .header {
     background: #FFFFFF;
     display: flex;
-    align-items: center;
-height: 80px;}
+    align-items: center;}
 .nav-list {display: flex;}
 .nav-list .item:not(:last-child) {margin-right: 50px;}
 .nav-list .link {display: block;
-padding-top: 15px;
-padding-bottom: 15px;}
+padding-top: 32px;
+padding-bottom: 32px;}
 
 .kont-list {display: flex;
     list-style: none;
@@ -79,7 +71,11 @@ margin-right: 93px;}
 
 section ul {list-style: none;}
 
-.hero {
+.primary-section {height: 600px;
+
+    background: #2F303A;
+    padding: 200px 0 200px 0;}
+.primary-section h1 {
     width: 696px;
     font-weight: 900;
     font-size: 44px;
@@ -88,21 +84,21 @@ section ul {list-style: none;}
     letter-spacing: 0.06em;
     text-transform: uppercase;
     color: #FFFFFF;
-    margin: 0 auto 30px auto;
-padding-top: 200px;}
+    margin: 0 auto 30px auto;}
+
 
 .button {display: block;
     font-family: inherit;
     font-weight: 700;
     font-size: 16px;
-    line-height: 1,875;
+    line-height: 1.875;
     letter-spacing: 0.06em;
     border: none;
     background-color: var(--accent-color);
     color: #FFFFFF;
     border-radius: 4px;
 cursor: pointer;
-margin: 0 auto 200px auto;}
+margin: 0 auto 0 auto;}
 
 
 .button {padding: 10px 32px;
@@ -111,7 +107,8 @@ text-align: center;}
 
 .our-qualities .qualities {display: flex;
     justify-content:space-between;
-    margin-bottom: 94px;}
+    padding-bottom: 94px;
+    padding-top: 94px;}
 .qual-item {width: 270px;}
 
 .our-qualities h3 {font-size: 14px;
@@ -127,28 +124,26 @@ margin-bottom: 10px;}
     line-height: 1.1666;
     text-align: center;
     color: var(--title-text-color);
-margin-bottom: 50px;}
+padding-bottom: 50px;}
 
+.w-w-d-item .img {display: block;}
 .what-we-do .w-w-d-item {display: flex;
 justify-content: space-between;
-margin-bottom: 94px;}
+padding-bottom: 94px;}
 
 .our-team {
     font-size: 36px;
     line-height: 1.1666;
     text-align: center;
     color: var(--title-text-color);
-    padding-top: 102px;
+    padding-top: 94px;
     margin-bottom: 50px;}
 
-.team-section  {background: #F5F4FA;
-width: 1600px;
-margin-left: auto;
-margin-right: auto;
-margin-bottom: 8px;}
+.team-section  {background: #F5F4FA;}
+
 .team-section .team-list {display: flex;
 justify-content: space-between;
-padding-bottom: 86px;}
+padding-bottom: 94px;}
 .team-item {background: #FFFFFF;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;}
@@ -168,11 +163,10 @@ padding-bottom: 86px;}
 }
 
 .buttons-portfolio {display: flex;
-justify-content: center;}
+justify-content: center;
+    padding-top: 94px;
+    padding-bottom: 50px;}
 
-.buttons-portfolio .butt-port {margin-left: 8px;}
-
-.buttons-portfolio .butt-port:not(:first-child) {margin-left: 8px;}
 .buttons-portfolio button {cursor: pointer;
     border: none;
     border-radius: 4px;
@@ -182,22 +176,25 @@ justify-content: center;}
     line-height: 1.625;
     text-align: center;
     padding: 6px 22px;
-margin-top: 94px;
-margin-bottom: 50px;}
+margin-left: 8px;}
 
 .buttons-portfolio button:hover,
 .buttons-portfolio button:focus {
             background-color: var(--accent-color);
             color: #FFFFFF;}
 
-.portfolio-items .portfolio-list {display: flex;
+
+
+
+.portfolio-items {display: flex;
 flex-wrap: wrap;
-justify-content: space-between;}
+justify-content: space-between;
+padding-bottom: 30px;}
 
 .filter-item {background: #FFFFFF;
     border: 1px solid #EEEEEE;
 margin-bottom: 30px;}
-
+.portfolio-items:nth-last-child(-n + 3) {margin-bottom: 0px;}
 .portfolio-items p {font-size: 16px;
 color: var(--primary-text-color);
 margin: 0px 24px;
@@ -211,26 +208,25 @@ margin: 20px 24px 4px 24px;}
 
 .footer-container {display: block;
     width: 1600px;
-    height: 252px;
     margin-left: auto;
     margin-right: auto;
     background: #2F303A;
 padding-top: 60px;}
 
-.logo-footer {
+.logo-footer {display: block;
     color: #FFFFFF;
     font-family: 'Raleway';
     font-style: normal;
 text-decoration: none;
 font-weight: 700;
     font-size: 26px;
-    line-height: 1.19;}
+    line-height: 1.19;
+margin-bottom: 20px;}
 .address {
     font-style: normal;
     line-height: 1.71;
     color: #FFFFFF;
-margin-top: 20px;
-margin-bottom: 9px;}
+padding-bottom: 60px;}
 
 
 .google-adress {text-decoration: none;
@@ -239,8 +235,7 @@ color: #FFFFFF;}
 
 .address-list-mail {text-decoration: none;
     line-height: 1.71;
-    color: rgba(255, 255, 255, 0.6);
-padding-bottom: 9px;}
+    color: rgba(255, 255, 255, 0.6);}
 
 .address-list-mail:hover {color: var(--accent-color);}
 
