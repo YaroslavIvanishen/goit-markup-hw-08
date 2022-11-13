@@ -10,7 +10,13 @@ body {font-family: 'Roboto', sans-serif;
     font-size: 14px;
     letter-spacing: 0.03em;
     color: var(--primary-text-color);
-margin: 0;}
+    margin: 0;
+    max-width: 1600px;
+    margin-left: auto;
+    margin-right: auto;
+    border: 1px solid #000000;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
 
 .body-container {
     width: 1200px;
@@ -36,6 +42,7 @@ padding-top: 32px;
 padding-bottom: 32px;}
 
 .kont-list {display: flex;
+    align-items: center;
     list-style: none;
     margin-left: auto;
 }
@@ -62,6 +69,8 @@ margin-right: 93px;}
 .nav-list a:hover, .nav-list a:focus {color: var(--accent-color);}
 .nav-list a.current {color: var(--accent-color);}
 
+
+
 .kont-list a {text-decoration: none;
     font-weight: 500;
     line-height: 1.1428;
@@ -71,15 +80,15 @@ margin-right: 93px;}
 
 section ul {list-style: none;}
 
-.primary-section {
-    padding: 200px 0 200px 0;
-}
+.primary-section {padding: 200px 0 200px 0;}
 
 .overlay {max-width: 1600px;
-    height: 600px;
+    max-height: 600px;
 margin: 0 auto 0 auto;
-background-image: url(/images/hero-background.jpg);
-background-position: center;}
+background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4),
+    rgba(46, 47, 57, 0.4)), url(/images/hero-background.jpg);
+    border-bottom: 1px solid #000000;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);}
 
     .primary-section h1 {
     width: 696px;
@@ -114,9 +123,51 @@ text-align: center;}
 .our-qualities {padding-bottom: 94px;
     padding-top: 94px;}
 .our-qualities .qualities {display: flex;
-    justify-content:space-between;
+    gap: 30px;
 }
-.qual-item {width: 270px;}
+.qual-item-1::before {content: "";
+    height: 120px;
+display: block;
+background: #F5F4FA;
+    border-radius: 4px;
+margin-bottom: 30px;
+background-image: url(/images/antena.svg);
+background-repeat: no-repeat;
+    background-size: 70px;
+    background-position: center;}
+
+.qual-item-2::before {content: "";
+    height: 120px;
+display: block;
+background: #F5F4FA;
+    border-radius: 4px;
+margin-bottom: 30px;
+background-image: url(/images/clock.svg);
+background-repeat: no-repeat;
+    background-size: 70px;
+    background-position: center;}
+
+.qual-item-3::before {content: "";
+    height: 120px;
+display: block;
+background: #F5F4FA;
+    border-radius: 4px;
+margin-bottom: 30px;
+background-image: url(/images/grafic.svg);
+background-repeat: no-repeat;
+    background-size: 70px;
+    background-position: center;}
+
+.qual-item-4::before {content: "";
+    height: 120px;
+display: block;
+background: #F5F4FA;
+    border-radius: 4px;
+margin-bottom: 30px;
+background-image: url(/images/astronaut.svg);
+background-repeat: no-repeat;
+background-size: 70px;
+background-position: center;}
 
 .our-qualities h3 {font-size: 14px;
     line-height: 1.1428;
@@ -172,6 +223,16 @@ justify-content: space-between;}
     line-height: 1.1875;
     text-align: center;
 margin-bottom: 16px;}
+
+.regular-customers {padding: 94px 0px;}
+.regular-customers h2 {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.1666;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: #212121;
+margin-bottom: 50px;}
 
 .main-contein-port {padding-top: 94px;
 padding-bottom: 94px;}
@@ -266,15 +327,10 @@ color: #FFFFFF;}
 
 /*____________SVG________________*/
 
-.icon-mail {
-    width: 16px;
-    height: 12px;
-    fill: currentColor;}
+.kont-icon {display:inline-block;
+    align-self: left bottom;
+}
 
-.icon-phone {
-    width: 10px;
-height: 16px;
-fill: currentColor;}
 
 /*___________________SOCIAL__LINKS_____________________*/
 
@@ -295,3 +351,18 @@ gap: 10px;}
 .social-link:hover .social-icon {fill: #FFFFFF;}
 
 /*_________________OUR__QUALITIES__SVG___________________*/
+
+/*__________OUR REGULAR CUSTOMERS___________*/
+.reg-cast-list {display: flex;
+justify-content: center;
+gap: 30px;}
+
+.reg-cast-item {width: 100%; height: 100%;}
+
+.reg-cast-a {display: block;
+    padding: 16px 32px;
+    width: 170px;
+    height: 92px;
+    border: 1px solid #AFB1B8;
+    border-radius: 4px;}
+
