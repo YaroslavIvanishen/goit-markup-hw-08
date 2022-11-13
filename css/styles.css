@@ -72,11 +72,16 @@ margin-right: 93px;}
 section ul {list-style: none;}
 
 .primary-section {
-    height: 600px;
-    background: #2F303A;
     padding: 200px 0 200px 0;
-margin: 0 auto 0 auto;}
-.primary-section h1 {
+}
+
+.overlay {max-width: 1600px;
+    height: 600px;
+margin: 0 auto 0 auto;
+background-image: url(/images/hero-background.jpg);
+background-position: center;}
+
+    .primary-section h1 {
     width: 696px;
     font-weight: 900;
     font-size: 44px;
@@ -271,11 +276,22 @@ color: #FFFFFF;}
 height: 16px;
 fill: currentColor;}
 
-.soc-lin-list {display: flex;
+/*___________________SOCIAL__LINKS_____________________*/
+
+.social-list {display: flex;
 justify-content: center;
 gap: 10px;}
 
-.soc-lin-li {width: 44px; height: 44px; }
+.social-link {width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;}
 
-.soc-lin-a {width: 12px; height: 12px; border-radius: 50%; display: block; background-color: aqua;}
-.soc-lin-a:hover, .soc-lin-a:focus {color: var(--accent-color);}
+.social-icon {fill: #AFB1B8;}
+
+.social-link:hover, .social-link:focus {background-color: var(--accent-color);}
+.social-link:hover .social-icon {fill: #FFFFFF;}
+
+/*_________________OUR__QUALITIES__SVG___________________*/
