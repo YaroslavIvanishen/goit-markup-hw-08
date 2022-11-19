@@ -59,7 +59,9 @@
     </header>
     <section class="primary-section overlay">
       <h1>Ефективні рішення для вашого бізнесу</h1>
-      <button class="button" type="button">Замовити послугу</button>
+      <button data-modal-open class="button" type="button">
+        Замовити послугу
+      </button>
     </section>
     <section class="our-qualities">
       <div class="body-container">
@@ -367,5 +369,13 @@
         </div>
       </div>
     </footer>
+    <div data-modal class="backdrop is-hidden">
+      <div class="modal">
+        <svg data-modal-close class="close">
+          <use href="./images/icons.svg#icon-close"></use>
+        </svg>
+      </div>
+    </div>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
