@@ -323,7 +323,7 @@ transition-property: box-shadow;
 border-top: 0px;
 padding: 20px 24px;}
 
-.portfolio-items p {font-size: 16px;
+.portfolio-items {font-size: 16px;
 color: var(--primary-text-color);}
 
 .portfolio-items h3 {font-size: 18px;
@@ -485,16 +485,25 @@ fill: #fff;
 .close:hover {fill:var(--accent-color);}
 
 .product-thumb {
-position: relative;}
-.portfolio-items:nth-child(1):hover .technokriak {opacity: 1;}
-.technokriak {position: absolute;
+position: relative;
+overflow: hidden;}
+
+.thumb-annimation:hover .technokriak {
+    transform: translateY(0);
+}
+.technokriak {
+position: absolute;
 top: 0;
-left: 0;
-height: 100%;
 background-color: rgba(33, 150, 243, 0.9);
-opacity: 0;}
-.tehno-item {margin: 63px 24px 90px;
-    font-size: 18px;
-    line-height: 1.5555;
-    color: #FFFFFF;}
+color: #FFFFFF;
+padding: 63px 24px 90px;
+font-weight: 400;
+font-size: 18px;
+line-height: 1.5555;
+height: 100%;
+transform: translateY(100%);
+transition-property: transform;
+transition-duration: 250ms;
+transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);}
+
 
