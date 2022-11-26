@@ -367,9 +367,18 @@
             </li>
           </ul>
         </div>
+        <form class="footer-form">
+          <p>ПІДПИШІТЬСЯ НА РОЗСИЛКУ</p>
+          <div class="foot-for-flex">
+            <label>
+              <input type="email" class="footer-input" placeholder="E-mail" />
+            </label>
+            <button type="submit">Підписатися</button>
+          </div>
+        </form>
       </div>
     </footer>
-    <div data-modal class="backdrop">
+    <div data-modal class="backdrop is-hidden">
       <div class="modal">
         <svg data-modal-close class="close">
           <use href="./images/icons.svg#icon-close"></use>
@@ -419,14 +428,18 @@
             ></textarea>
           </div>
           <div class="icon-positio">
-            <label>
+            <label class="label-checked">
               <input
                 type="checkbox"
                 name="accepting"
                 value="Я погоджуюся з Умовами договору"
                 class="accepting"
               />
-              Погоджуюся з розсилкою та приймаю <a href="#"> Умови договору</a>
+              <span class="icon-checked"
+                ><svg width="16" height="15">
+                  <use href="./images/icons.svg#icon-checked"></use></svg
+              ></span>
+              Погоджуюся з розсилкою та приймаю <a href="#">_Умови договору</a>
             </label>
           </div>
         </form>

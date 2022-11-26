@@ -484,8 +484,8 @@ padding: 40px;}
 .close {width: 30px;
 height: 30px;
 position: absolute;
-top: 12px;
-right:12px;
+top: 8px;
+right:8px;
 fill: #000000
     background: #FFFFFF;
     border: 1px solid rgba(0, 0, 0, 0.1);
@@ -564,5 +564,51 @@ border-color: #2196F3;}
     padding: 12px 16px;
 resize: none;}
 .user-text:focus {border: 1px solid var(--accent-color)}
-.accepting a {font-variant: var(--accent-color);}
+.accepting {display: none;}
+
+.label-checked {display: flex;
+    align-content: center;
+    justify-content: center;}
+.icon-checked {display: inline-block;
+    fill: transparent;
+    width: 16px;
+    height: 15px;
+border: 2px solid #212121;
+border-radius: 2px;
+margin-right: 3px;}
+.accepting:checked + .icon-checked {background-color: var(--accent-color);
+fill: #FFFFFF;
+border: none;}
+
+.footer-form {width: 570px;
+}
+.footer-form p {font-weight: 700;
+    font-size: 14px;
+    line-height: 1.1428;
+color: #FFFFFF;
+margin-bottom: 20px;}
+.footer-input {padding: 15px 16px;
+    width: 358px;
+    color: #AFB1B8;
+    height: 50px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+border-radius: 4px;
+background-color: transparent;}
+.footer-input::placeholder {
+    color: rgba(255, 255, 255, 0.6);}
+.footer-form button {padding: 8px 28px;
+margin-left: 12px;
+background-color: var(--accent-color);
+color: #FFFFFF;
+border-color: transparent;
+border-radius: 4px;
+font-weight: 700;
+font-size: 16px;
+line-height: 1.875;
+letter-spacing: 0.06em;
+transition-property: transform;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);}
+.footer-form button:hover, .footer-form button:focus {}
+
 
