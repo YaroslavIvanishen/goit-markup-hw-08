@@ -600,7 +600,8 @@ border: none;}
     line-height: 1.1428;
 color: #FFFFFF;
 margin-bottom: 20px;}
-.footer-input {padding: 15px 16px;
+.footer-input {display: inline-block;
+    padding: 15px 16px;
     width: 358px;
     color: #AFB1B8;
     height: 50px;
@@ -612,7 +613,9 @@ transition-property: border-color;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);}
 .footer-input::placeholder {
     color: rgba(255, 255, 255, 0.6);}
-.foot-for-flex button {padding: 8px 28px;
+.foot-for-flex {display: inline-flex;}
+.foot-for-flex button {display: inline-flex;
+padding: 8px 28px;
 margin-left: 12px;
 background-color: var(--accent-color);
 color: #FFFFFF;
@@ -626,14 +629,12 @@ transition-property: background-color, box-shadow;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);}
 .foot-for-flex button::after {content: "";
+    
+    width: 24px;
     height: 24px;
-    display: inline-block;
-    background: transparent
-    background-image: url(../images/icons.svg#icon-send);
-    background-repeat: no-repeat;
-    background-size: 24px;
-    background-position: center;
-    fill: #ffffff;}
+    background-image: url(../images/icon-send.svg);
+margin-left: 10px;
+align-self: center;}
 .foot-for-flex button:hover, .footer-form button:focus {background: #188CE8;
     box-shadow: 0px 4px 4px rgba(250, 248, 248, 0.15);}
 
