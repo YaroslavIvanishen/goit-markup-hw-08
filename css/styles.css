@@ -527,7 +527,6 @@ margin-bottom: 12px;}
 
 .mod-input {width: 100%;
 height: 40px;
-margin-bottom: 10px;
 border: 1px solid rgba(33, 33, 33, 0.2);
 border-radius: 4px;
 padding-left: 42px;
@@ -559,15 +558,17 @@ top: 11px;
 transition-property: fill;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);}
-.mod-input:focus + .mod-icon {fill: var(--accent-color);}
+
 .icon-positio {position: relative;
-margin-top: 4px;}
-.mod-input:focus .mod-icon {fill: var(--accent-color);
+margin-top: 4px;
+margin-bottom: 10px;}
+.mod-input:focus + .mod-icon {fill: var(--accent-color);
 border-color: #2196F3;}
+.icon-positio-last {margin-bottom: 20px;
+    margin-top: 4px;}
 
 .user-text {width: 100%;
     height: 120px;
-    margin-bottom: 20px;
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
     outline: transparent;
@@ -577,24 +578,25 @@ transition-property: border-color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);}
 .user-text:focus {border: 1px solid var(--accent-color)}
-.accepting {display: none;}
+.accepting {visibility: hidden;}
+
 
 .label-checked {display: flex;
     align-content: center;
     justify-content: center;}
+.label-checked:hover {border: #000000;}
 .icon-checked {display: inline-block;
     fill: transparent;
     width: 16px;
     height: 15px;
 border: 2px solid #212121;
 border-radius: 2px;
-margin-right: 3px;}
+margin-right: 7px;}
 .accepting:checked + .icon-checked {background-color: var(--accent-color);
 fill: #FFFFFF;
 border: none;}
 
-.footer-form {width: 570px;
-}
+.footer-form {width: 570px;}
 .footer-form p {font-weight: 700;
     font-size: 14px;
     line-height: 1.1428;
