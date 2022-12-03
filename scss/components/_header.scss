@@ -82,8 +82,13 @@
         color: var(--primary-text-color);
         transition-property: color;
         transition-duration: 250ms;
-        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    }
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);}
+
+&__icon {
+    fill: var(--primary-text-color);
+}
+&__icon {
+    margin-right: 10px;}
 
     &__link:hover,
     &__link:focus {

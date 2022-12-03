@@ -1,0 +1,117 @@
+.footer {
+    margin-left: auto;
+    margin-right: auto;
+    background: #2F303A;
+    padding-top: 60px;
+    padding-bottom: 60px;
+
+
+&__adress-wrapper {
+    display: inline-block;
+}
+
+&__logo {
+    display: inline-block;
+    margin-bottom: 20px;
+    color: #FFFFFF;
+    font-family: 'Raleway';
+    font-style: normal;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    margin-bottom: 20px;
+}
+
+&__address {
+    font-style: normal;
+    line-height: 1.71;
+    color: #FFFFFF;
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+&__google-link {
+    text-decoration: none;
+    color: #FFFFFF;
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+&__google-link:hover,
+&__google-link:focus {
+    color: var(--accent-color);
+}
+
+&__list {
+    list-style: none;
+}
+
+&__list li:not(:last-child) {
+    margin-bottom: 9px;
+}
+
+&__mail {
+    text-decoration: none;
+    line-height: 1.71;
+    color: rgba(255, 255, 255, 0.6);
+}
+
+&__mail:hover {
+    color: var(--accent-color);
+}
+
+
+&__tel {
+    text-decoration: none;
+    line-height: 1.71;
+    color: rgba(255, 255, 255, 0.6);
+}
+
+&__tel:hover {
+    color: var(--accent-color);
+}}
+
+
+
+
+.foot-soc-links {
+    display: inline-block;
+
+&__header {
+        margin-bottom: 20px;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 1.1428;
+        text-transform: uppercase;
+        color: #FFFFFF;}
+
+&__list {
+    display: flex;
+    gap: 10px;
+    list-style: none;
+}
+
+&__link {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(255, 255, 255, 0.1);
+    transition-property: background-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+&__icon {
+    fill: #FFFFFF;
+}
+
+&__link:hover,
+&__link:focus {
+    background-color: var(--accent-color);
+}}
