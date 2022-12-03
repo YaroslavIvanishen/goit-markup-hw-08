@@ -1,1 +1,9 @@
-@import './layouts/header'
+@import './base/reset';
+@import './utils/variables';
+@import './common/common';
+@import './components/header';
+@import './components/primary-section';
+@import './components/our-qualities';
+@import './components/what-we-do';
+@import './components/team-section';
+@import './components/social-networks';
