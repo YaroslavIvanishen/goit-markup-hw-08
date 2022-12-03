@@ -1,4 +1,28 @@
 
+.product-thumb {
+    position: relative;
+    overflow: hidden;
+}
+
+.thumb-annimation:hover .technokriak {
+    transform: translateY(0);
+}
+
+.technokriak {
+    position: absolute;
+    top: 0;
+    background-color: rgba(33, 150, 243, 0.9);
+    color: #FFFFFF;
+    padding: 63px 24px 90px;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.5555;
+    height: 100%;
+    transform: translateY(100%);
+    transition-property: transform;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
 
 .main-contein-port {padding-top: 94px;
 padding-bottom: 94px;}
@@ -63,145 +87,15 @@ color: var(--primary-text-color);}
 
 
 
-.backdrop {position: fixed;
-top: 0;
-left: 0;
-width: 100%;
-height: 100%;
-background-color: rgba(0, 0, 0, 0.2);
-transition-property: opacity, visibility;
-    transition-duration: 250ms, 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1), cubic-bezier(0.4, 0, 0.2, 1);;}
-.backdrop.is-hidden {opacity: 0;
-pointer-events: none;}
-
-.modal {position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-min-width: 528px;
-min-height: 581px;
-background-color: #fff;
-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
-border-radius: 4px;
-padding: 40px;}
-
-.close {width: 30px;
-height: 30px;
-position: absolute;
-top: 8px;
-right:8px;
-fill: #000000
-    background-color: #fff;
-    border: 1px solid rgba(0, 0, 0, 0.1);
-    border-radius: 50%;
-    padding: 6px;
-    transition-property: fill;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);}
-.close:hover {fill:var(--accent-color);}
-
-.product-thumb {
-position: relative;
-overflow: hidden;}
-
-.thumb-annimation:hover .technokriak {
-    transform: translateY(0);
-}
-.technokriak {
-position: absolute;
-top: 0;
-background-color: rgba(33, 150, 243, 0.9);
-color: #FFFFFF;
-padding: 63px 24px 90px;
-font-weight: 400;
-font-size: 18px;
-line-height: 1.5555;
-height: 100%;
-transform: translateY(100%);
-transition-property: transform;
-transition-duration: 250ms;
-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);}
-
-.modal-heder {font-weight: 700;
-    font-size: 20px;
-    line-height: 1.15;
-    text-align: center;
-    color: #212121;
-margin-bottom: 12px;}
-
-.mod-input {width: 100%;
-height: 40px;
-border: 1px solid rgba(33, 33, 33, 0.2);
-border-radius: 4px;
-padding-left: 42px;
-outline: transparent;
-transition-property: border-color;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);}
-.mod-input:focus {border: 1px solid var(--accent-color)}
-.submit {display: block;
-    margin: 30px auto -1px auto;
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 1.875;
-    letter-spacing: 0.06em;
-    padding: 10px 52px;
-    color: #fff;
-    background: var(--accent-color);
-    border-radius: 4px;
-border: none;
-transition-property: background-color, box-shadow;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);}
-.submit:hover, .submit:focus {box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-background: #188CE8;}
-.mod-icon {fill: #212121;
-position: absolute;
-left: 12px;
-top: 11px;
-transition-property: fill;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);}
-
-.icon-positio {position: relative;
-margin-top: 4px;
-margin-bottom: 10px;}
-.mod-input:focus + .mod-icon {fill: var(--accent-color);
-border-color: #2196F3;}
-.icon-positio-last {margin-bottom: 20px;
-    margin-top: 4px;}
-
-.user-text {width: 100%;
-    height: 120px;
-    border: 1px solid rgba(33, 33, 33, 0.2);
-    border-radius: 4px;
-    outline: transparent;
-    padding: 12px 16px;
-resize: none;
-transition-property: border-color;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);}
-.user-text:focus {border: 1px solid var(--accent-color)}
-.accepting {opacity: 0;
-position: absolute;}
 
 
-.label-checked {display: flex;
-    align-content: center;
-    justify-content: center;}
-.label-checked:hover {border: #000000;}
-.icon-checked {display: inline-block;
-    fill: transparent;
-    width: 16px;
-    height: 15px;
-border: 2px solid #212121;
-border-radius: 2px;
-margin-right: 7px;}
-.accepting:checked + label span.icon-checked {background-color: var(--accent-color);
-fill: #FFFFFF;
-border: none;}
-.accepting:focus + label span.icon-checked {border-color: var(--accent-color);}
+
+
+
+
+
+
+
 
 
 
