@@ -42,7 +42,7 @@
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-&__close:hover {
+&__close:hover{
     fill: var(--accent-color);
 }
 &__heder {
@@ -162,12 +162,12 @@
     margin-right: 7px;
 }
 
-&__accepting:checked + label span &__icon-checked {
+&__accepting:checked + label &__icon-checked {
     background-color: var(--accent-color);
     fill: #FFFFFF;
     border: none;
 }
 
-&__accepting:focus+label span &__icon-checked {
+&__accepting:focus + label &__icon-checked {
     border-color: var(--accent-color);
 }}

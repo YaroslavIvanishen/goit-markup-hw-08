@@ -12,7 +12,7 @@
         margin-right: 93px;
     }
 
-    &__logo-web {
+        &__logo--logo-web {
         color: var(--accent-color);
     }}
 
@@ -20,14 +20,7 @@
 .nav-list {display: flex;
 &__item:not(:last-child) {
         margin-right: 50px;
-    }
-
-    &__link {
-        display: block;
-        padding: 32px 0px;
-        position: relative;
-    }
-
+}
     &__link::after {
         content: "";
         position: absolute;
@@ -41,11 +34,9 @@
         opacity: 0;
     }
 
-    &__link--current::after {
-        opacity: 1;
-        color: var(--accent-color);}
-
-    &__link {
+    &__link {display: block;
+        padding: 32px 0px;
+        position: relative;
     text-decoration: none;
     font-weight: 500;
     line-height: 1.1428;
@@ -58,10 +49,17 @@
 &__link:hover,
 &__link:focus {
     color: var(--accent-color);
-}}
-        .border-nav {
-            border-bottom: 1px solid #ECECEC;
+}
+
+        &__link--current {
+            color: var(--accent-color);
         }
+    
+        &__link--current::after {
+            opacity: 1;
+            color: var(--accent-color);
+        }}
+        
 
 .kont-list {
     display: flex;
@@ -84,10 +82,8 @@
         transition-duration: 250ms;
         transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);}
 
-&__icon {
+    &__icon {
     fill: var(--primary-text-color);
-}
-&__icon {
     margin-right: 10px;}
 
     &__link:hover,
@@ -95,9 +91,12 @@
         color: var(--accent-color);
     }
 
-    &__link:hover .kont-icon {
+    &__link:hover &__icon {
         fill: var(--accent-color);
-    }}
+    }
+&__link:focus &__icon {
+    fill: var(--accent-color);
+}}
         
 
 

@@ -27,9 +27,6 @@
     font-style: normal;
     line-height: 1.71;
     color: #FFFFFF;
-    transition-property: color;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 &__google-link {
@@ -57,9 +54,11 @@
     text-decoration: none;
     line-height: 1.71;
     color: rgba(255, 255, 255, 0.6);
-}
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1)}
 
-&__mail:hover {
+&__mail:hover, &__mail:focus {
     color: var(--accent-color);
 }
 
@@ -68,9 +67,11 @@
     text-decoration: none;
     line-height: 1.71;
     color: rgba(255, 255, 255, 0.6);
-}
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1)}
 
-&__tel:hover {
+&__tel:hover, &__tel:focus {
     color: var(--accent-color);
 }}
 
