@@ -20,10 +20,10 @@
 
   <body>
     <header>
-      <div class="body-container">
+      <div class="body-container body-container--header-flex">
         <nav class="header">
-          <a class="header__logo" href="index.html"
-            ><span class="header__logo--logo-web">Web</span>Studio</a
+          <a class="header__logo header__logo-web" href="index.html"
+            ><span>Web</span>Studio</a
           >
 
           <ul class="nav-list">
@@ -41,26 +41,25 @@
               <a class="nav-list__link" href="#">Контакти</a>
             </li>
           </ul>
-
-          <ul class="kont-list">
-            <li class="kont-list__item">
-              <a class="kont-list__link" href="mailto:info@devstudio.com"
-                ><svg class="kont-list__icon" width="16" height="12">
-                  <use href="./images/icons.svg#icon-mail"></use>
-                </svg>
-                info@devstudio.com</a
-              >
-            </li>
-            <li class="kont-list__item">
-              <a class="kont-list__link" href="tel:+380961111111"
-                ><svg class="kont-list__icon" width="10" height="16">
-                  <use href="./images/icons.svg#icon-phone"></use>
-                </svg>
-                +38 096 111 11 11</a
-              >
-            </li>
-          </ul>
         </nav>
+        <ul class="kont-list">
+          <li class="kont-list__item">
+            <a class="kont-list__link" href="mailto:info@devstudio.com"
+              ><svg class="kont-list__icon" width="16" height="12">
+                <use href="./images/icons.svg#icon-mail"></use>
+              </svg>
+              info@devstudio.com</a
+            >
+          </li>
+          <li class="kont-list__item">
+            <a class="kont-list__link" href="tel:+380961111111"
+              ><svg class="kont-list__icon" width="10" height="16">
+                <use href="./images/icons.svg#icon-phone"></use>
+              </svg>
+              +38 096 111 11 11</a
+            >
+          </li>
+        </ul>
       </div>
     </header>
     <section class="primary-section">
@@ -114,9 +113,9 @@
               src="./images/box1.jpg"
               alt="Девелопер друкує код"
             />
-            <span class="what-we-do__wrapper"
-              ><p class="what-we-do__description">Десктопні додатки</p></span
-            >
+            <div class="what-we-do__wrapper">
+              <p class="what-we-do__description">Десктопні додатки</p>
+            </div>
           </li>
           <li class="what-we-do__item">
             <img
@@ -124,9 +123,9 @@
               src="./images/box2.jpg"
               alt="Дизайнер вибирає тип розмітки сайту для смартфонної версії"
             />
-            <span class="what-we-do__wrapper"
-              ><p class="what-we-do__description">Мобільні додатки</p></span
-            >
+            <div class="what-we-do__wrapper">
+              <p class="what-we-do__description">Мобільні додатки</p>
+            </div>
           </li>
           <li class="what-we-do__item">
             <img
@@ -134,9 +133,9 @@
               src="./images/box3.jpg"
               alt="Дизайнер вибирає колір з палітри для проекту"
             />
-            <span class="what-we-do__wrapper">
+            <div class="what-we-do__wrapper">
               <p class="what-we-do__description">Дизайнерські рішення</p>
-            </span>
+            </div>
           </li>
         </ul>
       </div>
@@ -346,8 +345,8 @@
     <footer class="footer">
       <div class="body-container body-container--footer-flex">
         <div class="footer__adress-wrapper">
-          <a class="footer__logo" href="index.html"
-            ><span class="header__logo--logo-web">Web</span>Studio</a
+          <a class="footer__logo header__logo-web" href="index.html"
+            ><span>Web</span>Studio</a
           >
           <address class="footer__address">
             <ul class="footer__list">

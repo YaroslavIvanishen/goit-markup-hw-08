@@ -44,7 +44,7 @@
 
 &__close:hover{
     fill: var(--accent-color);
-}
+    cursor: pointer;}
 &__heder {
     font-weight: 700;
     font-size: 20px;
@@ -91,7 +91,7 @@
 &__submit:focus {
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     background: #188CE8;
-}
+cursor: pointer;}
 
 &__icon {
     fill: #212121;
@@ -146,11 +146,11 @@
     display: flex;
     align-content: center;
     justify-content: center;
-}
+    &:hover {
+        cursor: pointer;
+    }}
 
-&__label-checked:hover {
-    border: #000000;
-}
+
 
 &__icon-checked {
     display: inline-block;
@@ -170,4 +170,8 @@
 
 &__accepting:focus + label &__icon-checked {
     border-color: var(--accent-color);
+}
+&__accepting:hover+label &__icon-checked {
+    outline: solid 2px #000000;
+    cursor: pointer;
 }}

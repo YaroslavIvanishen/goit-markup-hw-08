@@ -1,6 +1,4 @@
-.header {
-    background: #FFFFFF;
-    display: flex;
+.header {display: flex;
     align-items: center;
 
 &__logo {font-family: 'Raleway', sans-serif;
@@ -12,7 +10,7 @@
         margin-right: 93px;
     }
 
-        &__logo--logo-web {
+       &__logo-web span {
         color: var(--accent-color);
     }}
 

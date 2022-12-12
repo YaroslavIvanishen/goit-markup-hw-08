@@ -15,9 +15,12 @@ margin-right: auto;
 &--footer-flex {
         display: flex;
         align-items: baseline;
-        gap: 70px;
-    }}
-
+        gap: 93px;
+    }
+&--header-flex {display: flex;
+    align-items: center;
+}
+&--border {border-bottom: 1px solid #ECECEC;}}
 .button {
     display: block;
     font-family: inherit;

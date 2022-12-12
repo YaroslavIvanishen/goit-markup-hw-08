@@ -1,0 +1,67 @@
+.footer-form {
+&__header {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.1428;
+    color: #FFFFFF;
+    margin-bottom: 20px;
+}
+
+&__input {
+    display: inline-block;
+    padding: 15px 16px;
+    width: 358px;
+    color: #AFB1B8;
+    height: 50px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 4px;
+    background-color: transparent;
+    transition-property: border-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+&__input::placeholder {
+    color: rgba(255, 255, 255, 0.6);
+}
+
+&__wrapper {
+    display: flex;
+}
+
+&__wrapper label {
+    opacity: 0;
+    position: absolute;
+}
+
+&__wrapper button {
+    display: inline-flex;
+    padding: 8px 28px;
+    margin-left: 12px;
+    background-color: var(--accent-color);
+    color: #FFFFFF;
+    border-color: transparent;
+    border-radius: 4px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.875;
+    letter-spacing: 0.06em;
+    transition-property: background-color, box-shadow;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+&__wrapper button::after {
+    content: "";
+    width: 24px;
+    height: 24px;
+    background-image: url(../images/icon-send.svg);
+    margin-left: 10px;
+    align-self: center;
+}
+
+&__wrapper button:hover,
+&__wrapper button:focus {
+    background: #188CE8;
+    box-shadow: 0px 4px 4px rgba(250, 248, 248, 0.15);
+    cursor: pointer;}}
