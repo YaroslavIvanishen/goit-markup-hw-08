@@ -6,12 +6,14 @@ body {font-family: 'Roboto', sans-serif;
     max-width: 1600px;
     margin-left: auto;
     margin-right: auto; }
+        
 
 .body-container {
     width: 1200px;
     padding: 0 15px; 
 margin-left: auto;
 margin-right: auto;
+
 &--footer-flex {
         display: flex;
         align-items: baseline;
@@ -20,7 +22,17 @@ margin-right: auto;
 &--header-flex {display: flex;
     align-items: center;
 }
-&--border {border-bottom: 1px solid #ECECEC;}}
+&--border {border-bottom: 1px solid #ECECEC;}
+}
+// @media screen and (max-width: 480px) {
+//     .body-container, section,
+//         ul {width: 480px;
+//     display: flex;
+// flex-wrap: wrap;
+// flex-basis: content;}
+// section,
+// ul {width: 100%;}   
+// }
 .button {
     display: block;
     font-family: inherit;
