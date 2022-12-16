@@ -1,15 +1,19 @@
 .our-qualities {
     padding-bottom: 94px;
     padding-top: 94px;
-&__list {
-        display: flex;
-        gap: 30px;
+&__list {gap: 30px;
+        @include mobile {
+                display: block;
+            }
+        @include tablet {display: flex;
+                            flex-basis: calc((100% - 30px) / 2);
+                        }
+            
+        @include desktop {display: flex;
+                            flex-basis: calc((100% - 90px) / 4);
+                        }
     }
 
-    &__item {
-        width: 270px;
-        height: 248px;
-    }
 
     &__item-1::before {
         content: "";

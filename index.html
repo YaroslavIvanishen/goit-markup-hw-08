@@ -108,31 +108,61 @@
         <h2 class="what-we-do__header">Чим ми займаємося</h2>
         <ul class="what-we-do__list">
           <li class="what-we-do__item">
-            <img
-              width="370"
-              src="./images/box1.jpg"
-              alt="Девелопер друкує код"
-            />
+            <picture>
+              <source
+                srcset="
+                  ./images/computer-desk.jpg    1x,
+                  ./images/computer-desk-2x.jpg 2x
+                "
+                media="(min-width:1200px)"
+              />
+              <img
+                src="./images/computer-desk-2x.jpg"
+                alt="Створення сайтів"
+                width="370"
+                height="294"
+              />
+            </picture>
             <div class="what-we-do__wrapper">
               <p class="what-we-do__description">Десктопні додатки</p>
             </div>
           </li>
           <li class="what-we-do__item">
-            <img
-              width="370"
-              src="./images/box2.jpg"
-              alt="Дизайнер вибирає тип розмітки сайту для смартфонної версії"
-            />
+            <picture>
+              <source
+                srcset="
+                  ./images/smartphone-desk.jpg    1x,
+                  ./images/smartphone-desk-2x.jpg 2x
+                "
+                media="(min-width:1200px)"
+              />
+              <img
+                src="./images/smartphone-desk-2x.jpg"
+                alt="Розробка мобільних додатків"
+                width="370"
+                height="294"
+              />
+            </picture>
             <div class="what-we-do__wrapper">
               <p class="what-we-do__description">Мобільні додатки</p>
             </div>
           </li>
           <li class="what-we-do__item">
-            <img
-              width="370"
-              src="./images/box3.jpg"
-              alt="Дизайнер вибирає колір з палітри для проекту"
-            />
+            <picture>
+              <source
+                srcset="
+                  ./images/tablet-desk.jpg    1x,
+                  ./images/tablet-desk-2x.jpg 2x
+                "
+                media="(min-width:1200px)"
+              />
+              <img
+                src="./images/tablet-desk-2x.jpg"
+                alt="Графічний дизайн"
+                width="370"
+                height="294"
+              />
+            </picture>
             <div class="what-we-do__wrapper">
               <p class="what-we-do__description">Дизайнерські рішення</p>
             </div>
