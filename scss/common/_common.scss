@@ -26,9 +26,25 @@ body {font-family: 'Roboto', sans-serif;
     }
 
 &--footer-flex {
-        display: flex;
-        align-items: baseline;
-        gap: 93px;
+    @include mobile {display: flex;
+    flex-direction: column;
+justify-content: center;
+gap: 60px;}
+        @include tablet {
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+                justify-content: center;
+                align-items: baseline;
+                gap: 60px;
+            }
+        
+            @include desktop {
+                display: flex;
+                flex-direction: row;
+                align-items: baseline;
+                gap: 93px;
+            }
     }
 &--header-flex {display: flex;
     align-items: center;
